@@ -1,0 +1,82 @@
+body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  background-image: url('\login-bg.jpg');
+  background-size: cover; /* Adjust the background size to cover the entire container */
+  background-position: center; 
+}
+
+.game{
+   max-width: calc(3*100px);
+   margin: 0 auto;
+   text-align: center;
+   padding: 20px;
+   
+}
+
+.status{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+}
+
+.cell{
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  border: 2px solid #828080;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover{
+  background-color: gray;
+}
+
+
+
+.reset-button{
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-header button{
+  border-radius: 40px;
+  height: 80px;
+  width: 150px;
+  font-size: 40px;
+}
+
+.App-header button:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
